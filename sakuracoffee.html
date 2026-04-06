@@ -3,273 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>さくら珈琲 | 吉祥寺の家族が集まるコミュニティカフェ</title>
-<meta name="description" content="吉祥寺で創業8年。子ども連れ・シニア・テレワーク歓迎のコミュニティカフェ。地元農家の野菜を使ったランチ、読書会・子育てサロンを毎月開催。">
+<title>Urban Brew Stand | 三軒茶屋のスペシャルティコーヒースタンド</title>
+<meta name="description" content="三軒茶屋のスタンド型スペシャルティコーヒー。テイクアウト特化・サブスク会員制・SNS映えラテアート。Instagramフォロワー2.1万人。">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;color:#3a3028;background:#fef9f4}
-  /* Header */
-  header{background:#fff;border-bottom:2px solid #f0e4d0;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-  .logo{font-size:1.35rem;font-weight:700;color:#6b4c2a;letter-spacing:.05em}
-  .logo small{display:block;font-size:.72rem;color:#a08060;font-weight:400;letter-spacing:.15em}
-  .logo .sakura{color:#e8748a}
-  nav a{color:#6b4c2a;text-decoration:none;margin-left:2rem;font-size:.9rem;font-weight:500}
-  nav a:hover{color:#e8748a}
-  .nav-reserve{background:#e8748a;color:#fff !important;padding:.4rem 1.2rem;border-radius:2rem;font-size:.85rem}
-  /* Hero */
-  .hero{background:linear-gradient(160deg,#fef0e8 0%,#fde8d8 40%,#fce0d0 100%);padding:5rem 5%;display:flex;align-items:center;justify-content:center;gap:4rem;min-height:480px}
-  .hero-text{max-width:520px}
-  .hero-label{background:#e8748a;color:#fff;padding:.3rem 1rem;border-radius:2rem;font-size:.8rem;display:inline-block;margin-bottom:1.2rem;font-weight:600}
-  .hero-text h1{font-size:2.4rem;font-weight:700;line-height:1.35;color:#3a2818;margin-bottom:1.2rem}
-  .hero-text h1 span{color:#e8748a}
-  .hero-text p{color:#7a5a40;line-height:1.95;font-size:.98rem;margin-bottom:1.5rem}
-  .hero-tags span{display:inline-block;background:#fff;border:1.5px solid #e8d0bc;color:#6b4c2a;padding:.3rem .8rem;border-radius:2rem;font-size:.82rem;margin:.25rem .2rem}
-  .hero-img{font-size:8rem;text-align:center;flex-shrink:0}
-  /* Features */
-  .features{background:#fff;padding:4.5rem 5%}
-  .features-inner{max-width:1000px;margin:0 auto}
-  .features h2{text-align:center;font-size:1.55rem;color:#3a2818;margin-bottom:.5rem}
-  .features h2 span{color:#e8748a}
-  .feat-sub{text-align:center;color:#a08060;font-size:.85rem;letter-spacing:.12em;margin-bottom:3rem}
-  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
-  .feat-card{text-align:center;padding:2rem 1.5rem;background:#fef9f4;border-radius:14px;border:1.5px solid #f0e4d0}
-  .feat-icon{font-size:2.8rem;margin-bottom:1rem}
-  .feat-title{font-weight:700;font-size:1.05rem;margin-bottom:.6rem;color:#3a2818}
-  .feat-desc{color:#7a6050;font-size:.88rem;line-height:1.7}
-  /* Menu */
-  .menu-section{padding:4.5rem 5%;max-width:1000px;margin:0 auto}
-  .menu-section h2{font-size:1.55rem;color:#3a2818;margin-bottom:.4rem}
-  .menu-section h2 span{color:#e8748a}
-  .menu-sub{color:#a08060;font-size:.85rem;letter-spacing:.12em;margin-bottom:2.5rem}
+  body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;color:#1a1a2e;background:#f8f9ff}
+  header{background:#fff;border-bottom:2px solid #e8eaf6;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .logo{font-size:1.35rem;font-weight:700;color:#2d3561;letter-spacing:.05em}
+  .logo small{display:block;font-size:.72rem;color:#7986cb;font-weight:400;letter-spacing:.15em}
+  nav a{color:#2d3561;text-decoration:none;margin-left:2rem;font-size:.9rem;font-weight:500}
+  nav a:hover{color:#5c6bc0}
+  .nav-cta{background:#5c6bc0;color:#fff !important;padding:.4rem 1.2rem;border-radius:2rem;font-size:.85rem}
+  .hero{background:linear-gradient(160deg,#e8eaf6 0%,#c5cae9 40%,#9fa8da 100%);padding:5rem 5%;display:flex;align-items:center;justify-content:center;gap:4rem;min-height:480px}
+  .hero-text h1{font-size:2.6rem;font-weight:900;color:#1a237e;line-height:1.2;margin-bottom:1.2rem}
+  .hero-text h1 span{color:#5c6bc0;display:block}
+  .hero-text p{color:#3949ab;font-size:1rem;line-height:1.9;max-width:460px;margin-bottom:2rem}
+  .hero-btns{display:flex;gap:1rem}
+  .btn-primary{background:#5c6bc0;color:#fff;padding:.8rem 2rem;border-radius:2rem;text-decoration:none;font-weight:700;font-size:.95rem}
+  .btn-secondary{background:#fff;color:#5c6bc0;padding:.8rem 2rem;border-radius:2rem;text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid #5c6bc0}
+  .hero-visual{background:linear-gradient(135deg,#3949ab,#1a237e);border-radius:20px;width:320px;height:320px;display:flex;align-items:center;justify-content:center;font-size:6rem;flex-shrink:0}
+  .features{background:#fff;padding:4rem 5%}
+  .features-inner{max-width:1100px;margin:0 auto}
+  .features h2{text-align:center;font-size:1.5rem;font-weight:700;color:#1a237e;margin-bottom:.5rem}
+  .features-sub{text-align:center;color:#7986cb;font-size:.88rem;letter-spacing:.12em;margin-bottom:3rem}
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+  .feature-card{text-align:center;padding:2rem 1.5rem;border-radius:16px;background:#f8f9ff;border:1px solid #e8eaf6}
+  .feature-icon{font-size:2.5rem;margin-bottom:1rem}
+  .feature-title{font-weight:700;font-size:1.05rem;color:#1a237e;margin-bottom:.6rem}
+  .feature-desc{color:#555;font-size:.88rem;line-height:1.7}
+  .menu-section{padding:5rem 5%;max-width:1100px;margin:0 auto}
+  .menu-section h2{font-size:1.5rem;font-weight:700;color:#1a237e;margin-bottom:.5rem}
+  .menu-sub{color:#7986cb;font-size:.88rem;letter-spacing:.12em;margin-bottom:2.5rem}
   .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-  .menu-card{background:#fff;border-radius:12px;padding:1.5rem;border:1.5px solid #f0e4d0;display:flex;gap:1rem;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-  .menu-emoji{font-size:2.5rem;flex-shrink:0}
-  .menu-name{font-weight:700;font-size:1rem;margin-bottom:.3rem}
-  .menu-desc{color:#7a6050;font-size:.87rem;line-height:1.6}
-  .menu-badge{display:inline-block;background:#fef0e8;border:1px solid #e8d0bc;color:#c0703a;font-size:.75rem;padding:.2rem .6rem;border-radius:2rem;margin-top:.5rem}
-  .menu-price{font-weight:700;color:#3a2818;margin-top:.4rem;font-size:.95rem}
-  /* Community */
-  .community{background:#3a2818;color:#fef9f4;padding:5rem 5%}
-  .community-inner{max-width:1000px;margin:0 auto}
-  .community h2{font-size:1.55rem;margin-bottom:.4rem}
-  .community h2 span{color:#e8a060}
-  .comm-sub{color:#b09080;font-size:.85rem;letter-spacing:.12em;margin-bottom:3rem}
-  .comm-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-  .comm-card{background:#4a3828;border-radius:14px;padding:1.8rem;border-left:4px solid #e8a060}
-  .comm-tag{background:#e8a060;color:#3a2818;font-size:.75rem;font-weight:700;padding:.25rem .8rem;border-radius:2rem;display:inline-block;margin-bottom:.8rem}
-  .comm-title{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:#fef9f4}
-  .comm-desc{color:#b09080;font-size:.88rem;line-height:1.6}
-  .comm-result{margin-top:.8rem;background:#3a2818;padding:.5rem .8rem;border-radius:.4rem;font-size:.82rem;color:#e8a060}
-  /* Voice */
-  .voice{padding:4.5rem 5%;max-width:1000px;margin:0 auto}
-  .voice h2{font-size:1.55rem;color:#3a2818;margin-bottom:.4rem}
-  .voice h2 span{color:#e8748a}
-  .voice-sub{color:#a08060;font-size:.85rem;letter-spacing:.12em;margin-bottom:2.5rem}
-  .voice-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-  .voice-card{background:#fff;border-radius:12px;padding:1.4rem;border:1.5px solid #f0e4d0;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-  .voice-stars{color:#f5a623;font-size:1rem;margin-bottom:.6rem}
-  .voice-text{color:#5a4030;font-size:.88rem;line-height:1.7;margin-bottom:.8rem}
-  .voice-author{color:#a08060;font-size:.82rem;font-weight:600}
-  /* Access */
-  .access{background:#fff;padding:4.5rem 5%}
-  .access-inner{max-width:1000px;margin:0 auto}
-  .access h2{font-size:1.55rem;color:#3a2818;margin-bottom:.4rem}
-  .access h2 span{color:#e8748a}
-  .access-sub{color:#a08060;font-size:.85rem;letter-spacing:.12em;margin-bottom:2.5rem}
-  .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
-  .access-info p{color:#5a4030;line-height:2.1;font-size:.95rem}
-  .access-info strong{color:#3a2818;display:inline-block;width:4.5rem}
-  .access-info .note{background:#fef0e8;border:1px solid #f0d0bc;border-radius:.5rem;padding:.8rem 1rem;margin-top:1rem;font-size:.85rem;line-height:1.7;color:#7a5040}
-  .map-placeholder{background:#f0e8dc;border-radius:12px;height:260px;display:flex;align-items:center;justify-content:center;color:#a08060;font-size:.95rem}
-  footer{background:#3a2818;color:#a08060;text-align:center;padding:2.5rem 5%;font-size:.85rem}
-  footer strong{color:#e8a060}
+  .menu-item{background:#fff;border-radius:14px;padding:1.5rem;display:flex;gap:1.5rem;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .menu-emoji{font-size:3rem;width:80px;height:80px;background:#e8eaf6;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .menu-info{}
+  .menu-name{font-weight:700;font-size:1.05rem;color:#1a237e;margin-bottom:.3rem}
+  .menu-tag{display:inline-block;background:#e8eaf6;color:#5c6bc0;font-size:.75rem;padding:.15rem .6rem;border-radius:1rem;margin-bottom:.5rem;font-weight:600}
+  .menu-desc{color:#666;font-size:.85rem;line-height:1.6;margin-bottom:.5rem}
+  .menu-price{font-weight:700;color:#2d3561}
+  .subscribe-section{background:linear-gradient(135deg,#1a237e,#3949ab);padding:5rem 5%;text-align:center}
+  .subscribe-section h2{color:#fff;font-size:1.6rem;font-weight:700;margin-bottom:.5rem}
+  .subscribe-sub{color:#9fa8da;font-size:.88rem;letter-spacing:.1em;margin-bottom:3rem}
+  .plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto 2.5rem}
+  .plan-card{background:#fff;border-radius:16px;padding:2rem 1.5rem;text-align:center}
+  .plan-name{font-weight:700;color:#1a237e;font-size:1rem;margin-bottom:.5rem}
+  .plan-price{font-size:2rem;font-weight:900;color:#5c6bc0;margin-bottom:.3rem}
+  .plan-price span{font-size:.9rem;font-weight:400;color:#888}
+  .plan-desc{color:#666;font-size:.83rem;line-height:1.7;margin-bottom:1rem}
+  .plan-badge{display:inline-block;background:#5c6bc0;color:#fff;padding:.3rem .9rem;border-radius:1rem;font-size:.78rem;font-weight:700}
+  .plan-badge.popular{background:#ff7043}
+  .sns-section{background:#f8f9ff;padding:5rem 5%;text-align:center}
+  .sns-section h2{color:#1a237e;font-size:1.5rem;font-weight:700;margin-bottom:.5rem}
+  .sns-sub{color:#7986cb;font-size:.88rem;letter-spacing:.12em;margin-bottom:2.5rem}
+  .sns-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;max-width:700px;margin:0 auto}
+  .sns-item{aspect-ratio:1;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+  .sns-item:nth-child(1){background:linear-gradient(135deg,#5c6bc0,#3949ab)}
+  .sns-item:nth-child(2){background:linear-gradient(135deg,#9fa8da,#7986cb)}
+  .sns-item:nth-child(3){background:linear-gradient(135deg,#3949ab,#1a237e)}
+  .sns-item:nth-child(4){background:linear-gradient(135deg,#7986cb,#5c6bc0)}
+  .sns-item:nth-child(5){background:linear-gradient(135deg,#c5cae9,#9fa8da)}
+  .sns-item:nth-child(6){background:linear-gradient(135deg,#5c6bc0,#3949ab)}
+  .sns-item:nth-child(7){background:linear-gradient(135deg,#1a237e,#0d1757)}
+  .sns-item:nth-child(8){background:linear-gradient(135deg,#9fa8da,#5c6bc0)}
+  .sns-count{color:#5c6bc0;font-size:1.3rem;font-weight:700;margin-top:1.5rem}
+  .access-section{padding:5rem 5%;max-width:1100px;margin:0 auto}
+  .access-section h2{font-size:1.5rem;font-weight:700;color:#1a237e;margin-bottom:.5rem}
+  .access-sub{color:#7986cb;font-size:.88rem;letter-spacing:.12em;margin-bottom:2rem}
+  .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+  .access-info p{color:#555;line-height:2;font-size:.95rem}
+  .access-info strong{color:#1a237e;display:inline-block;width:4rem}
+  .map-placeholder{background:#e8eaf6;border-radius:12px;height:260px;display:flex;align-items:center;justify-content:center;color:#7986cb;font-size:.95rem}
+  footer{background:#1a237e;color:#7986cb;text-align:center;padding:2.5rem 5%;font-size:.85rem}
+  footer strong{color:#9fa8da}
   @media(max-width:768px){
-    .hero{flex-direction:column;gap:2rem;text-align:center}
-    .hero-img{font-size:5rem}
-    .feat-grid,.menu-grid,.comm-grid,.voice-list,.access-grid{grid-template-columns:1fr}
+    .hero{flex-direction:column;gap:2rem}
+    .hero-visual{width:200px;height:200px;font-size:4rem}
+    .hero-text h1{font-size:1.8rem}
+    .feature-grid,.menu-grid,.plan-grid,.access-grid{grid-template-columns:1fr}
     nav{display:none}
   }
 </style>
 </head>
 <body>
 <header>
-  <div class="logo"><span class="sakura">🌸</span> さくら珈琲 <small>SAKURA COFFEE ／ KICHIJOJI</small></div>
+  <div class="logo">URBAN BREW STAND <small>アーバン ブリュー スタンド</small></div>
   <nav>
     <a href="#">メニュー</a>
-    <a href="#">コミュニティ</a>
-    <a href="#">イベント</a>
-    <a href="#">お客様の声</a>
+    <a href="#">サブスク</a>
+    <a href="#">SNS</a>
     <a href="#">アクセス</a>
-    <a href="#" class="nav-reserve">予約する</a>
+    <a href="#" class="nav-cta">会員登録</a>
   </nav>
 </header>
 
 <div class="hero">
   <div class="hero-text">
-    <div class="hero-label">📍 吉祥寺 ／ 創業2016年</div>
-    <h1>街の<span>縁側</span>になりたい。<br>みんなの居場所、さくら珈琲</h1>
-    <p>小さなお子様からシニアまで、地域の方がほっとできる場所を目指しています。地元農家の野菜を使ったランチ、子育てサロン、読書会——コーヒー1杯から始まるご縁を大切にしています。</p>
-    <div class="hero-tags">
-      <span>🍼 お子様連れ歓迎</span>
-      <span>💻 テレワーク可（平日）</span>
-      <span>🌿 地産地消ランチ</span>
-      <span>📚 月1読書会</span>
-      <span>👵 シニア割引あり</span>
+    <h1>毎日のコーヒーを<span>もっとスマートに。</span></h1>
+    <p>三軒茶屋のスタンド型スペシャルティコーヒー。サブスクリプション会員制で、毎日お得においしいコーヒーをテイクアウト。SNS映えのラテアートも人気。</p>
+    <div class="hero-btns">
+      <a href="#" class="btn-primary">サブスク会員になる</a>
+      <a href="#" class="btn-secondary">メニューを見る</a>
     </div>
   </div>
-  <div class="hero-img">🌸</div>
+  <div class="hero-visual">☕</div>
 </div>
 
 <div class="features">
   <div class="features-inner">
-    <h2>さくら珈琲が<span>選ばれる理由</span></h2>
-    <div class="feat-sub">WHAT MAKES US SPECIAL</div>
-    <div class="feat-grid">
-      <div class="feat-card">
-        <div class="feat-icon">🌾</div>
-        <div class="feat-title">地元農家直送の食材</div>
-        <div class="feat-desc">武蔵野市・小金井市の農家さんと直接提携。季節の野菜をふんだんに使ったランチは、地産地消にこだわっています。「どこで誰が育てたか」がわかる安心感。</div>
+    <h2>Urban Brew Stand が選ばれる3つの理由</h2>
+    <div class="features-sub">WHY CHOOSE US</div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">最短2分でテイクアウト</div>
+        <div class="feature-desc">アプリで事前注文すれば待ち時間ゼロ。朝の忙しい時間も、ランチも、帰宅途中も、スマートにコーヒーを受け取れます。</div>
       </div>
-      <div class="feat-card">
-        <div class="feat-icon">👨‍👩‍👧</div>
-        <div class="feat-title">子ども連れが安心できる設計</div>
-        <div class="feat-desc">ベビーカーでも入りやすい広い通路、授乳室・おむつ替えスペース完備。お子様用メニュー・食器あり。毎月1回の子育てサロンも大好評です。</div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <div class="feature-title">SNS映えラテアート</div>
+        <div class="feature-desc">バリスタが毎日描くオリジナルラテアート。月ごとにテーマが変わり、インスタグラムでのシェアで来店客の20%が新規流入。</div>
       </div>
-      <div class="feat-card">
-        <div class="feat-icon">🤝</div>
-        <div class="feat-title">地域コミュニティの拠点</div>
-        <div class="feat-desc">読書会・シニアのためのスマホ教室・地域のクリエイターによるアート展示など、毎月さまざまなイベントを開催。一見さんも常連さんも、自然と繋がれる場所です。</div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <div class="feature-title">サブスク会員制で最大40%OFF</div>
+        <div class="feature-desc">月額定額のサブスクリプション会員は毎日1杯が格安に。地域のヘビーユーザーに大人気のサービスです。</div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="menu-section">
-  <h2>Menu <span>メニュー</span></h2>
-  <div class="menu-sub">FOOD &amp; DRINKS</div>
+  <h2>Menu</h2>
+  <div class="menu-sub">こだわりのスペシャルティコーヒー</div>
   <div class="menu-grid">
-    <div class="menu-card">
-      <div class="menu-emoji">🍳</div>
-      <div>
-        <div class="menu-name">季節の野菜プレート（ランチ）</div>
-        <div class="menu-desc">武蔵野産・小金井産の旬野菜をメインに、玄米ごはん・自家製スープ・豆腐のデリ3種付き。毎週月曜日に内容が変わります。</div>
-        <div class="menu-badge">🌿 地産地消</div>
-        <div class="menu-price">¥1,100（税込）</div>
-      </div>
-    </div>
-    <div class="menu-card">
+    <div class="menu-item">
       <div class="menu-emoji">☕</div>
-      <div>
-        <div class="menu-name">さくらブレンド</div>
-        <div class="menu-desc">程よい酸味と甘みのバランスが取れた当店オリジナルブレンド。飲みやすく、ランチやスイーツとの相性も◎。毎日焙煎しています。</div>
-        <div class="menu-badge">🏆 看板メニュー</div>
-        <div class="menu-price">¥520（ホット）／ ¥580（アイス）</div>
+      <div class="menu-info">
+        <div class="menu-name">シグネチャー エスプレッソ</div>
+        <div class="menu-tag">BESTSELLER</div>
+        <div class="menu-desc">Urban Brew Stand の看板メニュー。エチオピアとブラジルのブレンドで、チョコレートとベリーの余韻が楽しめる濃厚な一杯。</div>
+        <div class="menu-price">¥480（S） ¥560（M）</div>
       </div>
     </div>
-    <div class="menu-card">
-      <div class="menu-emoji">🍰</div>
-      <div>
-        <div class="menu-name">手作りシフォンケーキ</div>
-        <div class="menu-desc">スタッフが毎朝焼き上げる自家製シフォンケーキ。プレーン・抹茶・季節のフルーバーを日替わりでご用意。豆乳生クリーム添え。</div>
-        <div class="menu-badge">🎂 毎朝手作り</div>
-        <div class="menu-price">¥480（ドリンクセット¥900）</div>
+    <div class="menu-item">
+      <div class="menu-emoji">🥛</div>
+      <div class="menu-info">
+        <div class="menu-name">アートラテ（季節限定デザイン）</div>
+        <div class="menu-tag">SNS人気 No.1</div>
+        <div class="menu-desc">バリスタが一杯一杯丁寧に描くラテアート。今月のテーマは「春の訪れ」。シェアしてくれた方には次回10%OFF券をプレゼント。</div>
+        <div class="menu-price">¥650（M only）</div>
       </div>
     </div>
-    <div class="menu-card">
-      <div class="menu-emoji">🍼</div>
-      <div>
-        <div class="menu-name">キッズプレート</div>
-        <div class="menu-desc">小さなお子様向けの食べやすいサイズのプレート。野菜が苦手なお子様でも食べやすい工夫をしています。アレルギー対応可（要事前相談）。</div>
-        <div class="menu-badge">👶 お子様向け</div>
-        <div class="menu-price">¥680（税込）</div>
+    <div class="menu-item">
+      <div class="menu-emoji">🧊</div>
+      <div class="menu-info">
+        <div class="menu-name">コールドブリュー 12時間抽出</div>
+        <div class="menu-tag">NEW</div>
+        <div class="menu-desc">12時間かけてゆっくり抽出した水出しコーヒー。甘みとまろやかさが特徴。夏季限定ではなく通年提供。夏は特に人気。</div>
+        <div class="menu-price">¥520（M） ¥620（L）</div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="community">
-  <div class="community-inner">
-    <h2>Community <span>コミュニティ活動</span></h2>
-    <div class="comm-sub">EVENTS &amp; PROGRAMS</div>
-    <div class="comm-grid">
-      <div class="comm-card">
-        <div class="comm-tag">毎月第2土曜日</div>
-        <div class="comm-title">☕ さくら読書会</div>
-        <div class="comm-desc">テーマを決めて各自が読んできた本を紹介し合う読書会。2018年から続く人気企画で、メンバーは現在42名。20代から70代まで幅広い年齢層が参加しています。</div>
-        <div class="comm-result">📊 累計参加者：延べ800名以上 ／ 平均参加者：12名/回</div>
-      </div>
-      <div class="comm-card">
-        <div class="comm-tag">毎月第1水曜日</div>
-        <div class="comm-title">👶 ちびっこカフェタイム（子育てサロン）</div>
-        <div class="comm-desc">0〜3歳のお子さんと保護者が集まるカフェサロン。育児相談や情報交換、保護者同士の交流の場として定着。吉祥寺子育て支援センターとも連携。</div>
-        <div class="comm-result">📊 月平均20組参加 ／ リピート率88%</div>
-      </div>
-      <div class="comm-card">
-        <div class="comm-tag">毎月第3木曜日</div>
-        <div class="comm-title">📱 シニアのためのスマホ教室</div>
-        <div class="comm-desc">LINEの使い方・写真の撮り方・アプリの活用法など、スマートフォン初心者向けの講座。参加費無料（コーヒー代のみ）。受講者が講師役になる「逆転教室」も人気。</div>
-        <div class="comm-result">📊 参加者 65歳以上が73% ／ 満足度調査 4.8/5.0</div>
-      </div>
-      <div class="comm-card">
-        <div class="comm-tag">不定期開催</div>
-        <div class="comm-title">🎨 吉祥寺クリエイターズ展</div>
-        <div class="comm-desc">地域のイラストレーター・写真家・陶芸家など、地元クリエイターの作品展示・販売。来店者が新しい出会いを楽しめるほか、クリエイターの発表の場としても機能。</div>
-        <div class="comm-result">📊 年4回開催 ／ 展示参加クリエイター：延べ38名</div>
+    <div class="menu-item">
+      <div class="menu-emoji">🌿</div>
+      <div class="menu-info">
+        <div class="menu-name">オーツミルクラテ</div>
+        <div class="menu-tag">VEGAN OK</div>
+        <div class="menu-desc">環境配慮型のオーツミルクを使用。まろやかでクリーミーな口当たり。乳製品が苦手な方・ヴィーガンの方にも。豆乳・アーモンドミルクも選択可。</div>
+        <div class="menu-price">¥580（S） ¥680（M）</div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="voice">
-  <h2>Customer <span>Voice</span></h2>
-  <div class="voice-sub">お客様の声（Googleレビューより）</div>
-  <div class="voice-list">
-    <div class="voice-card">
-      <div class="voice-stars">★★★★★</div>
-      <div class="voice-text">子どもが騒いでも温かく受け入れてくれる雰囲気が最高です。ランチの野菜プレートは本当においしくて、週2回は通っています。読書会のメンバーになってから、吉祥寺がもっと好きになりました。</div>
-      <div class="voice-author">30代 / 女性 / お子様連れ</div>
+<div class="subscribe-section">
+  <h2>サブスクリプション会員プラン</h2>
+  <div class="subscribe-sub">MONTHLY SUBSCRIPTION</div>
+  <div class="plan-grid">
+    <div class="plan-card">
+      <div class="plan-name">ライトプラン</div>
+      <div class="plan-price">¥2,980<span>/月</span></div>
+      <div class="plan-desc">月10杯まで対象ドリンクが¥200引き。テイクアウト専用。週2〜3回利用する方に最適。</div>
+      <div class="plan-badge">月10杯まで</div>
     </div>
-    <div class="voice-card">
-      <div class="voice-stars">★★★★★</div>
-      <div class="voice-text">テレワークで使わせてもらっていますが、電源もWi-Fiも快適で助かっています。コーヒーのクオリティも高く、スタッフの方の気遣いが心地よい。吉祥寺で1番好きなカフェです。</div>
-      <div class="voice-author">40代 / 男性 / テレワーク利用</div>
+    <div class="plan-card">
+      <div class="plan-name">スタンダードプラン</div>
+      <div class="plan-price">¥4,980<span>/月</span></div>
+      <div class="plan-desc">1日1杯まで対象ドリンクが半額に。毎日通う方に大人気。平日ヘビーユーザーに最もお得なプラン。</div>
+      <div class="plan-badge popular">人気 No.1</div>
     </div>
-    <div class="voice-card">
-      <div class="voice-stars">★★★★☆</div>
-      <div class="voice-text">スマホ教室に参加しています。難しいことを丁寧に教えてくれて、同じシニアの方とも仲良くなれました。カフェがこんなに居心地いい場所になるとは思いませんでした。</div>
-      <div class="voice-author">70代 / 女性 / スマホ教室参加者</div>
+    <div class="plan-card">
+      <div class="plan-name">プレミアムプラン</div>
+      <div class="plan-price">¥7,480<span>/月</span></div>
+      <div class="plan-desc">1日2杯まで半額＋月1回のバリスタ体験付き。同僚や家族へのお土産にも使えるお得な上位プラン。</div>
+      <div class="plan-badge">2杯＋体験付き</div>
     </div>
   </div>
+  <p style="color:#9fa8da;font-size:.88rem">※会員数は現在847名（2025年1月時点）。解約はいつでも可能です。</p>
 </div>
 
-<div class="access">
-  <div class="access-inner">
-    <h2>Access <span>アクセス</span></h2>
-    <div class="access-sub">LOCATION &amp; HOURS</div>
-    <div class="access-grid">
-      <div class="access-info">
-        <p><strong>住所</strong>東京都武蔵野市吉祥寺本町2-14-6 桜並木ビル1F</p>
-        <p><strong>電話</strong>0422-XX-XXXX</p>
-        <p><strong>営業</strong>月・水〜金 10:00〜20:00<br>土日 9:00〜19:00<br>（ランチ 11:30〜14:30 L.O.）</p>
-        <p><strong>定休日</strong>火曜日</p>
-        <p><strong>アクセス</strong>JR中央線・京王井の頭線「吉祥寺駅」<br>北口より徒歩6分（サンロード商店街方面）</p>
-        <div class="note">
-          🍼 授乳室・おむつ替えスペースあり<br>
-          ♿ バリアフリー対応（スロープ・車椅子対応トイレ）<br>
-          💻 Wi-Fi・電源完備（平日のみ）<br>
-          🅿️ 近隣コインパーキング（吉祥寺パーキング 徒歩2分）
-        </div>
-      </div>
-      <div class="map-placeholder">🗺️ Google マップ（吉祥寺本町2-14-6）</div>
+<div class="sns-section">
+  <h2>Instagram</h2>
+  <div class="sns-sub">@urbanbrewstand_sangenjaya</div>
+  <div class="sns-grid">
+    <div class="sns-item">☕</div>
+    <div class="sns-item">🎨</div>
+    <div class="sns-item">🌿</div>
+    <div class="sns-item">📱</div>
+    <div class="sns-item">🧊</div>
+    <div class="sns-item">🥛</div>
+    <div class="sns-item">✨</div>
+    <div class="sns-item">🌙</div>
+  </div>
+  <div class="sns-count">フォロワー 21,300人 ／ 毎日更新中</div>
+</div>
+
+<div class="access-section">
+  <h2>Access <span style="color:#5c6bc0">&amp; Hours</span></h2>
+  <div class="access-sub">LOCATION &amp; HOURS</div>
+  <div class="access-grid">
+    <div class="access-info">
+      <p><strong>住所</strong>東京都世田谷区太子堂4-1-15 アーバンビル1F</p>
+      <p><strong>電話</strong>03-XXXX-XXXX</p>
+      <p><strong>営業</strong>月〜金 7:00〜21:00<br>土日祝 8:00〜20:00</p>
+      <p><strong>定休日</strong>年末年始のみ</div>
+      <p><strong>アクセス</strong>東急田園都市線「三軒茶屋駅」徒歩2分<br>世田谷線「三軒茶屋駅」徒歩3分</p>
+      <p style="margin-top:1rem;color:#5c6bc0;font-size:.9rem">📱 アプリから事前注文可能<br>🔋 モバイルバッテリー貸し出しあり（会員限定）</p>
     </div>
+    <div class="map-placeholder">🗺️ Google マップ（太子堂4-1-15）</div>
   </div>
 </div>
 
 <footer>
-  <strong>さくら珈琲 SAKURA COFFEE</strong><br>
-  〒180-0004 東京都武蔵野市吉祥寺本町2-14-6 桜並木ビル1F<br>
-  Tel: 0422-XX-XXXX ／ 営業：月水〜金 10:00〜20:00 ／ 土日 9:00〜19:00 ／ 火曜定休<br>
-  © 2016 Sakura Coffee All Rights Reserved.
+  <strong>Urban Brew Stand（アーバン ブリュー スタンド）</strong> ／ 〒154-0004 東京都世田谷区太子堂4-1-15<br>
+  営業時間：月〜金 7:00〜21:00 ／ 土日祝 8:00〜20:00 ／ 年末年始休<br>
+  © 2017 Urban Brew Stand All Rights Reserved.
 </footer>
 </body>
 </html>
